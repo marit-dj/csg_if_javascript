@@ -20,9 +20,17 @@ function draw() {
     y += 5;
   }
 
-  y = constrain(y,0,height - 100);
+ if (keyIsDown(RIGHT_ARROW)) {
+    x += 5;
+  }
+   if (keyIsDown(LEFT_ARROW)) {
+    x -= 5;
+  }
 
-  if (y >= 75 && y <= 225) {
+  y = constrain(y,0,height - 100);
+  x = constrain(x,0,width - 100);
+
+  if (x >= 700 && x <= 875 && y >= 75 && y <= 225) {
     fill('chartreuse');
   }
   else {

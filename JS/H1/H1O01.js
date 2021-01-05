@@ -1,6 +1,6 @@
 function setup() {
-  canvas = createCanvas(1000,500);
-  background('orange');
+  canvas = createCanvas(1000,450);
+  background('grey');
   canvas.parent('processing');
   noLoop();
 }
@@ -10,12 +10,16 @@ function draw() {
   
   noStroke();
   fill('green');
-  ellipse(300,200,400);
+  ellipse(275,225,400);
+
+  noStroke();
+  fill("white");
+  ellipse(275,225,300);
   
   // witte rechthoek met rode rand
   
-  stroke('red');
+  stroke('green');
   fill('white');
   strokeWeight(10);
-  rect(650,100,250,300);  
+  rect(175,125,200,200);  
 }

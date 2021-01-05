@@ -13,13 +13,13 @@ function draw() {
   fill('black');
   text("mouseX:" + round(mouseX) + " mouseY:" + round(mouseY),10,20);
   text("xJOS:" + xJOS + " yJOS:" + yJOS,300,20);
-  translate(xJOS,yJOS);
+  translate(mouseX,mouseY);
   
   // in de volgende regels wordt JOS getekend
 
   push();
   noStroke();
-  fill('indianred');
+  fill('deeppink');
   ellipse(0,0,150);
   fill('slategray');
   ellipse(-20,-30,50);
@@ -27,13 +27,15 @@ function draw() {
   fill('white');
   ellipse(-20,-25,20,40);
   ellipse(20,-25,20,40);
-  fill('orange');
+  fill('hotpink');
   ellipse(0,10,50);
   stroke('slategray');
   strokeWeight(10);
   fill('white');
   arc(0, 40, 80, 40, 0, PI, CHORD);
   pop();
+    xJOS--;
+    yJOS-= 2;
   // einde tekenen JOS
   
-}
+} 
