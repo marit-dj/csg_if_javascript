@@ -18,13 +18,23 @@ function tekenTegel(x,y,s) {
   scale(s);
   translate(x,y);
   noStroke();
-  fill('deeppink');
-  triangle(0,0,25,25,50,0);  
-  fill('pink');
+  fill('Khaki');
+  rect(0,25,25,25);
+
+  fill('LightSkyBlue');
+  rect(0,0,25,25);
+
+  fill('Plum');
+  rect(25,0,25,25);
+
+  fill('LightGreen');
   rect(25,25,25,25);
-  fill('hotpink');
-  triangle(0,50,25,25,25,50);
-  fill('purple');
-  rect(25,25,25,25);
+
+  fill('smokewhite');
+  ellipse(12.5,12.5,12.5);
+  ellipse(12.5,37.5,12.5);
+  ellipse(37.5,12.5,12.5);
+  ellipse(37.5,37.5,12.5);
+
   pop();
 }
