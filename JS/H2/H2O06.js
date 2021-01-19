@@ -36,8 +36,15 @@ function draw() {
   }
   
   xJos = constrain(xJos,0,width - celGrootte);
-  
+  yJos = constrain(yJos,0,height - celGrootte);
+
   image(spriteJos,xJos,yJos);
+
+  if (xJos == 6*celGrootte
+ && yJos == 4*celGrootte) {
+ spriteJos.resize(50,50);
+ spriteJos.filter(ERODE); 
+}
 }
 
 function tekenRaster() {
